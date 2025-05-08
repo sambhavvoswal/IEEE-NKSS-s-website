@@ -1,16 +1,19 @@
 import React from 'react'
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import linkedinIcon from '/assets/linkedin.png';
+import instagramIcon from '/assets/instagram.png';
+import facebookIcon from '/assets/facebook.png';
+import logo from '/assets/cropped-NKSS-270x270.webp';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = ["Home", "About", "Committees", "Events", "NKCON"];
   const socialIcons = [
-    { name: "LinkedIn", icon: "/linkedin.svg", link: "https://linkedin.com" },
-    { name: "Instagram", icon: "/instagram.svg", link: "https://instagram.com" },
-    { name: "Facebook", icon: "/facebook.svg", link: "https://facebook.com" },
+    { name: "LinkedIn", icon: linkedinIcon, link: "https://linkedin.com" },
+    { name: "Instagram", icon: instagramIcon, link: "https://instagram.com" },
+    { name: "Facebook", icon: facebookIcon, link: "https://facebook.com" },
   ];
 
   return (
@@ -18,7 +21,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img src="/logo.png" alt="Logo" className="h-12" />
+          <img src={logo} alt="NKSS Logo" className="h-12" />
         </div>
 
         {/* Desktop Nav */}

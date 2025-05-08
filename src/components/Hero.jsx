@@ -1,10 +1,13 @@
+import heroBg from '/assets/hero-bg.jpg';
+
 export default function Hero() {
     return (
     <section
     className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center"
-    style={{ backgroundImage: "url('/hero-bg.png')" }} // Save image as public/hero-bg.png
+    style={{ backgroundImage: `url(${heroBg})` }}
     >
-    <div className="absolute inset-0 bg-black bg-opacity-40" />
+
+    {/* <div className="absolute inset-0 bg-black bg-opacity-40" /> */}
     <div className="relative z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
         IEEE NKSS
