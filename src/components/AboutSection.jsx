@@ -1,11 +1,14 @@
 import InfoCard from './InfoCard';
 import AdvisoryMember from './AdvisoryMember';
+import logo from '/assets/cropped-NKSS-270x270.webp';
+import profJangamshetty from '/assets/prof-jangamshetty.jpg';
+
 
 export default function AboutSection() {
 return (
 <section className="px-6 py-12 space-y-16">
     <InfoCard
-    image="/ieee-logo.png"
+    image={logo}
     title="ABOUT US"
     description="The IEEE North Karnataka Sub-Section (IEEE-NKSS), established in July 2020 (R0011902), aims to connect professionals and promote technological advancements through IEEE membership..."
     buttonText="Read More"
@@ -18,7 +21,7 @@ return (
     name="Prof. S. H. Jangamshetty"
     title="Vice Chancellor"
     location="Haveri University, Haveri - 581110"
-    image="/prof-jangamshetty.png"
+    image={profJangamshetty}
     profileLink="#"
     />
 </section>
