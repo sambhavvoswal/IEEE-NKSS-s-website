@@ -10,7 +10,7 @@ export default function Hero() {
     {/* <div className="absolute inset-0 bg-black bg-opacity-40" /> */}
     <div className="relative z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
-        IEEE NKSS
+        IEEE's NKSS
         </h1>
         <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-medium inline-flex items-center transition">
         Explore
